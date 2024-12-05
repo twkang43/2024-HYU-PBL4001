@@ -44,5 +44,5 @@
 2. [[HSAT 6회 정기 코딩 인증평가 기출] 출퇴근길](https://softeer.ai/practice/6248)
 
 ### 11주차
-1. [# [HSAT 7회 정기 코딩 인증평가 기출] 순서대로 방문하기](https://softeer.ai/practice/6246)
+1. [[HSAT 7회 정기 코딩 인증평가 기출] 순서대로 방문하기](https://softeer.ai/practice/6246)
 2. [[HSAT 7회 정기 코딩 인증평가 기출] 자동차 테스트](https://softeer.ai/practice/6247)
