@@ -27,7 +27,7 @@ def find_starting_point():
                 if -1 < direction:
                     return i,j,direction
                 
-def traverse(x,y,direction):
+def traverse(x,y,direction): # (x,y): 현재 좌표, direction: 현재 방향
     route = []
     map[x][y] = '.' # 경로 흔적 제거
     current_direction = direction

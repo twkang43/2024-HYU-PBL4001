@@ -19,7 +19,7 @@ def dfs(color_idx, x_max, x_min, y_max, y_min): # dfs를 통해 색상을 하나
         surface_new = abs((x_max_new-x_min_new) * (y_max_new-y_min_new)) # 현재의 점을 포함하는 직사각형 면적 계산
         
         if (surface_new < surface) or (color_idx == 1): # 백트래킹 (현재 점을 포함하는 직사각형이 기존 직사각형보다 작으면 해당 점 사용)
-            dfs(color_idx+1, x_max_new, x_min_new, y_max_new, y_min_new)
+            dfs(color_idx+1, x_max_new, x_min_new, y_max_new, y_min_new) # 각 포인트의 첫 점들이 기준이 되고, 그 기준을 바탕으로 면적 비교
         
 
 # main

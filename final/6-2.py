@@ -82,7 +82,7 @@ def simulate(rnd, score_sum): # rnd: 현재 라운드 순서, score_sum: 현재�
 
 # main
 N = int(input())
-garage = [[[] for _ in range(N)] for _ in range(3)] # 게임 라운드 x (NxN)
+garage = [[[] for _ in range(N)] for _ in range(3)] # 게임 라운드 x (Nx3N)
 
 for _ in range(3*N):
     tmp = list(map(int, input().split()))
