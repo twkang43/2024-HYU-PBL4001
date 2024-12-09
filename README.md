@@ -12,7 +12,7 @@
 3. [[21년 재직자 대회 예선] 로드 밸런서 트래픽 예측](https://softeer.ai/practice/6263)
 
 ### 3주차
-1. [[21년 재직자 대회 본선] 비밀 메뉴 2](https://softeer.ai/practice/6259)
+1. **[[21년 재직자 대회 본선] 비밀 메뉴 2](https://softeer.ai/practice/6259)**
 2. **[[21년 재직자 대회 본선] 거리 합 구하기](https://softeer.ai/practice/6258)**
 
 ### 4주차
@@ -24,7 +24,7 @@
 2. **[[HSAT 인증평가 1회] 차세대 지능형 교통시스템](https://softeer.ai/practice/6274)**
 
 ### 6주차
-1. [[HSAT 인증평가 2회] 사물인식 최소 면적 산출 프로그램](https://softeer.ai/practice/6277)
+1. **[[HSAT 인증평가 2회] 사물인식 최소 면적 산출 프로그램](https://softeer.ai/practice/6277)**
 2. **[[HSAT 인증평가 2회] Garage Game](https://softeer.ai/practice/6276)**
 
 ### 7주차
