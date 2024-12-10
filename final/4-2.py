@@ -25,13 +25,13 @@ revenue = 0
 scenario_index = 0
 buyer_payment = [0 for _ in range(N+1)] # buyer가 현재 지불하고자 하는 금액
 for i in range(len(offer)):
-    size, payment, buyer_id = offer[i][0], offer[i][1], offer[i][2]
+    size, payment, buyer_id = offer[i][0], offer[i][1], offer[i][2] # size 기준으로 정렬됨
     
     if buyer_payment[buyer_id] < payment: # buyer가 원래 지불하고자 한 금액보다 현재 payment가 더 큰 경우
         revenue += (payment - buyer_payment[buyer_id]) # 차액만큼 revenue update
         buyer_payment[buyer_id] = payment
         
-    while((scenario_index < M) and (scenario[scenario_index][0] <= revenue)): # 각 target을 만족시킨 경우
+    while((scenario_index < M) and (scenario[scenario_index][0] <= revenue)): # 현재의 size로 각 target을 만족시키는 경우
         scenario[scenario_index].append(size) # [target_revenue, target_id] -> [target_revenue, target_id, size]
         scenario_index += 1
 

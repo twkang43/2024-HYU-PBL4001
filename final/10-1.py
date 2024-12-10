@@ -43,7 +43,7 @@ def get_answer(binary_index):
             number2 += 2**i # number1 + number2 == binary_index
         tmp_index = tmp_index//2
         
-    digit = [0]*len(bit1)
+    digit = [0]*len(bit1) # 아래의 for loop에서 1씩 incremental
     for i in range(1, 2**(len(bit1)-1)): # 활성화된 비트들의 모든 부분집합 조합을 탐색, number1에서 나온 수가 number2에 나올 수 있음 -> 절반만 수행
         for j in range(len(bit1)): # 비트마스크를 두 부분집합으로 분할
             if digit[j] == 1: # bit1의 [j] 비트를 선택 해제

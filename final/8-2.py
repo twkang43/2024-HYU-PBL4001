@@ -4,21 +4,17 @@ input = sys.stdin.readline
 
 # main
 N = int(input())
-array = [[0 for _ in range(N+1)] for _ in range(N+1)]
-stack = list(map(int, input().split()))
+buses = list(map(int, input().split()))
 
-cnt = 0
-# array[j][i]: i보다 오른쪽에 있는 stack 값 중 j보다 작은 수들의 개수
-for i in range(N-1,0,-1):
-    for j in range(1,N+1):
-        if stack[i] < j: # stack[i]가 j보다 작다면, 다음 위치의 값은 현재 위치에서 1 증가
-            array[j][i-1] = array[j][i] + 1
-        else: # 그렇지 않다면, 현재 값 유지
-            array[j][i-1] = array[j][i]
-            
-for i in range(N-2):
-    for j in range(i+1,N-1):
-        if stack[i] < stack[j]:
-            cnt += array[stack[i]][j] # j 이후의 값들 중 stack[i]보다 작은 값의 개수를 더함
-            
-print(cnt)
+more = [[0 for _ in range(N)] for _ in range(N)] # more[i][k]: i-k 구간에 buses[i]보다 큰 buses[k]의 수
+total = 0
+
+for i in range(N):
+    for k in range(i+1,N): # i < j < k, 이후 k가 j의 역할을 하기 때문에 i+1부터 시작
+        if buses[i] < buses[k]: # 이후 k가 j의 역할
+            more[i][k] = more[i][k-1] + 1
+        else: # buses[k] < buses[i]
+            more[i][k] = more[i][k-1]
+            total += more[i][k] # i-k 사이에 buses[i]보다 큰 값의 수를 total에 더함
+
+print(total)
